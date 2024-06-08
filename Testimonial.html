@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .testimonial {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .testimonial:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .testimonial h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .testimonial p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        @media (max-width: 600px) {
+            .testimonial {
+                padding: 15px;
+            }
+            .testimonial h2 {
+                font-size: 1.2em;
+            }
+            .testimonial p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    <!-- Add Bootstrap CSS for navbar styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+   <div class="topnav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Youth Mental Health</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="blog1.html">Tech</a>
+                        <a class="dropdown-item" href="blog2.html">Lifestyle</a>
+                        <a class="dropdown-item" href="blog3.html">Travel</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonial</a></li>
+                <li class="nav-item"><a class="nav-link" href="educational.html">Educational</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="testimonials-container">
+    <div class="testimonial">
+        <h2>Ananya, 17, Mumbai</h2>
+        <p>"Before I found this website, I felt completely alone in my struggles with anxiety. The resources and stories shared here have given me hope and the tools I need to manage my anxiety better. I now feel more confident and understood."</p>
+    </div>
+
+    <div class="testimonial">
+        <h2>Rohan, 15, Delhi</h2>
+        <p>"This website has been a lifeline for me. The educational articles helped me understand what I was going through, and the support group connected me with others who truly get it. It's comforting to know I'm not alone in this."</p>
+    </div>
+
+    <div class="testimonial">
+        <h2>Priya, 19, Bangalore</h2>
+        <p>"As someone who has battled depression, finding this website was a turning point. The professional advice and coping strategies have been incredibly helpful. I learned how to talk about my feelings and seek the support I needed. Thank you for making such a difference in my life."</p>
+    </div>
+
+    <div class="testimonial">
+        <h2>Aarav, 13, Hyderabad</h2>
+        <p>"I was really struggling with my feelings and didn't know how to talk to my parents. This website showed me that it's okay to ask for help and gave me the words to start the conversation. My parents and I are now working together to support my mental health."</p>
+    </div>
+
+    <div class="testimonial">
+        <h2>Meera, 21, Chennai</h2>
+        <p>"Navigating college and mental health issues was overwhelming until I found this site. The practical tips for stress management and the access to counseling services have been game-changers for me. I now feel more balanced and ready to face challenges."</p>
+    </div>
+</div>
+
+<!-- Add Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
