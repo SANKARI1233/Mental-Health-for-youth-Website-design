@@ -1,0 +1,33 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+  }
+/* Styles for all images */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below images */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the image within its container */
+  }
+  
+  /* Styles for specific images with a class */
+  /* Styles for all images */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below images */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the image within its container */
+  }
+  
+ 

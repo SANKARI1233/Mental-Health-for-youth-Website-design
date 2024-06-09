@@ -1,67 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources - Mental Health Resources for Youth</title>
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Mental Health Resources</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Mental Health Resources for Youth</h1>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">Youth Mental Health</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="blog1.html">Tech</a>
-                                <a class="dropdown-item" href="blog2.html">Lifestyle</a>
-                                <a class="dropdown-item" href="blog3.html">Travel</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
-                        <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonial</a></li>
-                        <li class="nav-item"><a class="nav-link" href="educational.html">Educational</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main class="container">
-        <h2>Resources</h2>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="https://suicidepreventionlifeline.org/" target="_blank">National Suicide Prevention Lifeline</a></li>
-            <li class="list-group-item"><a href="https://www.thetrevorproject.org/" target="_blank">The Trevor Project</a></li>
-            <li class="list-group-item"><a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line</a></li>
-            <li class="list-group-item"><a href="https://www.nami.org/" target="_blank">NAMI (National Alliance on Mental Illness)</a></li>
-            <li class="list-group-item"><a href="https://www.mhanational.org/" target="_blank">Mental Health America</a></li>
-            <li class="list-group-item"><a href="https://www.headspace.com/" target="_blank">Headspace</a></li>
-            <li class="list-group-item"><a href="https://kidshelpphone.ca/" target="_blank">Kids Help Phone</a></li>
-            <li class="list-group-item"><a href="https://www.ok2talk.org/" target="_blank">OK2Talk</a></li>
-            <li class="list-group-item"><a href="https://adaa.org/" target="_blank">Anxiety and Depression Association of America (ADAA)</a></li>
-            <li class="list-group-item"><a href="https://teenmentalhealth.org/" target="_blank">Teen Mental Health</a></li>
-            <li class="list-group-item"><a href="https://www.mind.org.uk/" target="_blank">Mind</a></li>
-            <li class="list-group-item"><a href="https://www.jedfoundation.org/" target="_blank">The Jed Foundation</a></li>
-        </ul>
-    </main>
-    <footer class="container">
-        <p>&copy; 2024 Mental Health Resources for Youth</p>
-    </footer>
-    <!-- Add Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Youth Mental Health</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Mental Health Test</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Signup Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Login Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Blog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Blog1</a>
+            <a class="dropdown-item" href="#">Blog2</a>
+            <a class="dropdown-item" href="#">Blog3</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Educational</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Feedback Form</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Resources Section -->
+  <section id="resources" class="container">
+    <h2>Resources for Youth Mental Health</h2>
+    <ol>
+      <li><strong>National Suicide Prevention Lifeline</strong>: Provides free, confidential support 24/7 for
+        individuals in distress. <a href="https://suicidepreventionlifeline.org/">Website</a></li>
+      <li><strong>The Trevor Project</strong>: Offers crisis intervention and suicide prevention services to LGBTQ+
+        youth. <a href="https://www.thetrevorproject.org/">Website</a></li>
+      <li><strong>Crisis Text Line</strong>: Text-based support for those in crisis, available 24/7. <a
+          href="https://www.crisistextline.org/">Website</a></li>
+      <li><strong>NAMI (National Alliance on Mental Illness)</strong>: Provides education, support, and advocacy for
+        individuals and families affected by mental illness. <a href="https://www.nami.org/">Website</a></li>
+      <li><strong>Mental Health America</strong>: Offers resources, screening tools, and information on mental health
+        conditions. <a href="https://www.mhanational.org/">Website</a></li>
+      <li><strong>Headspace</strong>: Provides guided meditation and mindfulness exercises to help manage stress and
+        anxiety. <a href="https://www.headspace.com/">Website</a></li>
+      <li><strong>Kids Help Phone</strong>: Canada's 24/7 support service for youth, offering counseling, information,
+        and referrals. <a href="https://kidshelpphone.ca/">Website</a></li>
+      <li><strong>OK2Talk</strong>: Online community for teens and young adults struggling with mental health issues to
+        share their stories and find support. <a href="https://www.ok2talk.org/">Website</a></li>
+      <li><strong>Anxiety and Depression Association of America (ADAA)</strong>: Offers information and resources on
+        anxiety, depression, and related disorders. <a href="https://adaa.org/">Website</a></li>
+      <li><strong>Teen Mental Health</strong>: Provides resources, tools, and information specifically designed for
+        teenagers. <a href="https://teenmentalhealth.org/">Website</a></li>
+      <li><strong>Mind</strong>: UK-based mental health charity offering information, support, and advocacy. <a
+          href="https://www.mind.org.uk/">Website</a></li>
+      <li><strong>The Jed Foundation</strong>: Focuses on emotional health and preventing suicide among college and
+        university students. <a href="#">Website</a></li>
+    </ol>
+  </section>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
+    integrity="sha384-ZUq2MmRQ6w6JcyDR5NZPDE0aZM3Vv9JgHeD0XPR7grx/u3b5sGkGMI0K3axMltoW"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
