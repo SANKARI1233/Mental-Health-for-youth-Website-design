@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background color */
+body {
+  background-color: #F5F5FA; /* Light lavender background */
+}
+
+/* Navbar Styles */
+.navbar {
+  margin-bottom: 20px;
+  background-color: #3949ab; /* Indigo */
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #E6E6FA; /* Lavender color for links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFF; /* White color on hover */
+}
+
+/* Login Box Styles */
+.login-box {
+  margin-top: 50px;
+  background-color: #e8eaf6;
+  padding: 40px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Styles */
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #5c6bc0;
+  font-size: 12px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #5c6bc0;
+  border-color: #5c6bc0;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+/* Error Message Styles */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+/* Styles for all images */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below images */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the image within its container */
+  }
+  
+  /* Styles for specific images with a class */
+  /* Styles for all images */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below images */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the image within its container */
+  }
