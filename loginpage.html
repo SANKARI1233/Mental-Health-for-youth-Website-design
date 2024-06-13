@@ -1,57 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  </head>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Youth Mental Health</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav mr-auto">
-     <li class="nav-item"><a class="nav-link" href="MentalHealthTest.html">Mental Health Test</a></li>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Youth Mental Health</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="MentalHealthTest.html">Mental Health Test</a></li>
         <li class="nav-item"><a class="nav-link" href="signup.html">Signup Page</a></li>
-        <li class="nav-item"><a class="nav-link" href="loginPage.html">login Page</a></li>
-        <li class="nav-item"><a class="nav-link" href="AboutUS.html">AboutUS</a></li>
+        <li class="nav-item"><a class="nav-link" href="loginPage.html">Login Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="AboutUS.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="Resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="forum.html">forum</a></li>
+        <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Blog
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Blog</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Blog1.html">Blog1</a>
-            <a class="dropdown-item" href="Blog2.html">Blog2</a>
-            <a class="dropdown-item" href="Blog3.html">Blog3</a>
+            <a class="dropdown-item" href="Blog1.html">Blog 1</a>
+            <a class="dropdown-item" href="Blog2.html">Blog 2</a>
+            <a class="dropdown-item" href="Blog3.html">Blog 3</a>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="testimonial.html">testimonial</a></li>
-        <li class="nav-item"><a class="nav-link" href="educational.html">educational</a></li>
-        <li class="nav-item"><a class="nav-link" href="faqs.html">faqs</a></li>
-        
+        <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonial</a></li>
+        <li class="nav-item"><a class="nav-link" href="educational.html">Educational</a></li>
+        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
       </ul>
     </div>
   </nav>
-<div class="container">
-  <h1>Login</h1>
-  <form action="#" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
-    <button type="submit">Login</button>
-  </form>
-</div>
 
+  <div class="container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="user-box">
+          <input type="text" name="username" id="username" class="form-control" required>
+          <label>Username</label>
+          <div id="usernameError" class="error"></div>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" id="password" class="form-control" required>
+          <label>Password</label>
+          <span class="password-toggle" onclick="togglePassword()">&#128065;</span>
+          <div id="passwordError" class="error"></div>
+        </div>
+        <div class="checkbox-box form-check">
+          <input type="checkbox" name="remember" id="remember" class="form-check-input">
+          <label for="remember" class="form-check-label">Remember Me</label>
+        </div>
+        <a href="#" class="float-right">Forgot Password?</a>
+        <button type="submit" class="btn btn-primary mt-3">
+          <span class="spinner-border spinner-border-sm"></span>
+          <span class="submit-text">Submit</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function togglePassword() {
+      const password = document.getElementById('password');
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      document.getElementById('usernameError').textContent = '';
+      document.getElementById('passwordError').textContent = '';
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      let valid = true;
+
+      if (username === '') {
+        document.getElementById('usernameError').textContent = 'Username is required.';
+        valid = false;
+      }
+
+      if (password === '') {
+        document.getElementById('passwordError').textContent = 'Password is required.';
+        valid = false;
+      }
+
+      if (valid) {
+        const submitButton = e.target.querySelector('button[type="submit"]');
+        submitButton.classList.add('loading');
+
+        setTimeout(() => {
+          submitButton.classList.remove('loading');
+          alert('Form submitted');
+        }, 2000);
+      }
+    });
+  </script>
 </body>
+
 </html>

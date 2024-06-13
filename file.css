@@ -1,0 +1,220 @@
+
+    body {
+      background-color: #f7f7f7;
+    }
+
+    .login-box {
+      margin-top: 50px;
+      background-color: #e8eaf6;
+      padding: 40px;
+      border-radius: 10px;
+      color: #333;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-box {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #333;
+      border: none;
+      border-bottom: 1px solid #333;
+      outline: none;
+      background: transparent;
+    }
+
+    .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #333;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+
+    .user-box input:focus~label,
+    .user-box input:valid~label {
+      top: -20px;
+      left: 0;
+      color: #5c6bc0;
+      font-size: 12px;
+    }
+
+    .password-toggle {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 35px;
+      color: #666;
+    }
+
+    .spinner-border {
+      display: none;
+    }
+
+    .loading .spinner-border {
+      display: inline-block;
+    }
+
+    .loading .submit-text {
+      display: none;
+    }
+
+    .btn-primary {
+      background-color: #5c6bc0;
+      border-color: #5c6bc0;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: #3f51b5;
+      border-color: #3f51b5;
+    }
+
+    .navbar {
+      background-color: #3949ab;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
+    }
+
+    a.float-right {
+      color: #5c6bc0;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
+  /* General Styles */
+body {
+    background-color: #f7f7f7;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  p, ul {
+    color: #666;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #3949ab; /* Indigo */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+  
+  /* About Us Section */
+  #about {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #e8eaf6; /* Soft lavender background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about h2 {
+    margin-bottom: 20px;
+  }
+  
+  #about h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  a {
+    color: #5c6bc0; /* Soft indigo */
+  }
+  
+  a:hover {
+    color: #3f51b5; /* Slightly darker indigo */
+  }
+  /* Define lavender color */
+.lavender {
+    color: #E6E6FA; /* Lavender color */
+}
+
+/* Background color */
+body {
+    background-color: #F5F5FA; /* Light lavender background */
+}
+
+/* Navbar color */
+.navbar-dark {
+    background-color: #6A5ACD; /* Medium purple */
+}
+
+/* Navbar links color */
+.navbar-dark .navbar-nav .nav-link {
+    color: #E6E6FA; /* Lavender color for links */
+}
+
+/* Navbar link hover color */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFF; /* White color on hover */
+}
+
+/* Apply lavender color to headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #6A5ACD; /* Medium purple */
+}
+
+/* Apply lavender color to paragraphs */
+p {
+    color: #4B0082; /* Indigo color */
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+  }
+/* Styles for all images */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below images */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the image within its container */
+  }
+  
+  /* Styles for specific images with a class */
+  /* Styles for all images */
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below images */
+    margin: 0 auto; /* Center the image horizontally */
+    text-align: center; /* Center the image within its container */
+  }
